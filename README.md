@@ -22,6 +22,10 @@ The project implements a modular architecture with dedicated classes for (refere
 The system extracts sentiment from both brief reviews and concise summaries (typically one or two sentences long), offering multi-dimensional analysis of customer opinions.
 
 ## Discussion
+The word cloud map for our customers summary review is shown below:
+
+[View the Word Cloud PDF](https://github.com/newking9088/product_recommendation_nlp_roberta_vader/blob/main/WordCloud.pdf)
+
 We explored the following relations:
 
     - Correlation patterns between product price and sentiment polarity
