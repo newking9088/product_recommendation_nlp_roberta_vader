@@ -1,5 +1,7 @@
 # Sentiment-Enhanced Product Recommendation System for E-Commerce: A Comparative Analysis of RoBERTa and VADER
 
+- [Blog Post](https://nycdatascience.com/blog/nlp/sentiment-enhanced-product-recommendation-system-for-e-commerce/)
+
 ## Overview
 
 This project leverages advanced Natural Language Processing (NLP) techniques to analyze customer sentiment in e-commerce product reviews. By extracting emotional context from user-generated content, the system creates a sophisticated recommendation engine that goes beyond traditional rating systems. The implementation compares two leading sentiment analysis approaches—RoBERTa (an optimized BERT variant) and VADER—to determine which provides more accurate and nuanced understanding of customer opinions.
