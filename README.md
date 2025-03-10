@@ -27,6 +27,38 @@ The system extracts sentiment from both brief reviews and concise summaries (typ
 - Identification of sentiment-price-rating relationships that can inform pricing strategies
 - Optimized recommendation algorithms that prioritize products with consistently positive sentiment patterns
 
+  <div style="display: flex; flex-direction: column; gap: 30px; margin-bottom: 30px;">
+  <div>
+    <h3 style="text-align: center;">RoBERTa Sentiment Analysis</h3>
+    <figure style="margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center;">
+      <a href="https://github.com/newking9088/product_recommendation_nlp_roberta_vader/blob/main/roberta_sentiment_analysis.png" target="_blank">
+        <img src="https://github.com/newking9088/product_recommendation_nlp_roberta_vader/blob/main/roberta_sentiment_analysis.png" 
+             alt="RoBERTa Sentiment Analysis Results" 
+             style="width: 100%; max-width: 800px; height: auto;">
+      </a>
+      <figcaption style="text-align: center; font-style: italic; color: #666; margin-top: 10px;">
+        Figure 1: Sentiment analysis results using RoBERTa model
+      </figcaption>
+    </figure>
+  </div>
+  
+  <div>
+    <h3 style="text-align: center;">VADER Sentiment Analysis</h3>
+    <figure style="margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center;">
+      <a href="https://github.com/newking9088/product_recommendation_nlp_roberta_vader/blob/main/vader_sentiment_analysis.png" target="_blank">
+        <img src="https://github.com/newking9088/product_recommendation_nlp_roberta_vader/blob/main/vader_sentiment_analysis.png" 
+             alt="VADER Sentiment Analysis Results" 
+             style="width: 100%; max-width: 800px; height: auto;">
+      </a>
+      <figcaption style="text-align: center; font-style: italic; color: #666; margin-top: 10px;">
+        Figure 2: Sentiment analysis results using VADER lexicon-based approach
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+The comparison reveals distinct patterns between both sentiment analysis models: RoBERTa displays more cautious sentiment assignment with higher neutral classifications (43.5% for reviews vs. VADER's 39.4%), while VADER tends to assign more positive sentiment (53.4% for reviews and 75.8% for summaries compared to RoBERTa's 46.9% and 69.4%). Though RoBERTa likely offers superior contextual understanding and nuance detection, it required approximately 1000x longer processing time than VADER's efficient lexicon-based approach. For a definitive accuracy assessment, human-annotated ground truth labels would be necessary to evaluate which model better captures authentic sentiment, particularly in cases where contextual understanding significantly impacts interpretation.
+
 ## Applications
 This sentiment-enhanced recommendation system can help e-commerce platforms improve customer satisfaction by recommending products that genuinely resonate with users, potentially increasing conversion rates and reducing return frequencies.
 
