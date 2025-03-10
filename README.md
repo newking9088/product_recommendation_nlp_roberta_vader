@@ -29,35 +29,42 @@ The system extracts sentiment from both brief reviews and concise summaries (typ
 
   <div style="display: flex; flex-direction: column; gap: 30px; margin-bottom: 30px;">
   <div>
-    <h3 style="text-align: center;">RoBERTa Sentiment Analysis</h3>
     <figure style="margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center;">
       <a href="https://github.com/newking9088/product_recommendation_nlp_roberta_vader/blob/main/roberta_sentiment_analysis.png" target="_blank">
         <img src="https://github.com/newking9088/product_recommendation_nlp_roberta_vader/blob/main/roberta_sentiment_analysis.png" 
              alt="RoBERTa Sentiment Analysis Results" 
              style="width: 100%; max-width: 800px; height: auto;">
       </a>
-      <figcaption style="text-align: center; font-style: italic; color: #666; margin-top: 10px;">
-        Figure 1: Sentiment analysis results using RoBERTa model
-      </figcaption>
     </figure>
   </div>
-  
+
+  <br>
   <div>
-    <h3 style="text-align: center;">VADER Sentiment Analysis</h3>
     <figure style="margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center;">
       <a href="https://github.com/newking9088/product_recommendation_nlp_roberta_vader/blob/main/vader_sentiment_analysis.png" target="_blank">
         <img src="https://github.com/newking9088/product_recommendation_nlp_roberta_vader/blob/main/vader_sentiment_analysis.png" 
              alt="VADER Sentiment Analysis Results" 
              style="width: 100%; max-width: 800px; height: auto;">
       </a>
-      <figcaption style="text-align: center; font-style: italic; color: #666; margin-top: 10px;">
-        Figure 2: Sentiment analysis results using VADER lexicon-based approach
-      </figcaption>
-    </figure>
   </div>
 </div>
 
-The comparison reveals distinct patterns between both sentiment analysis models: RoBERTa displays more cautious sentiment assignment with higher neutral classifications (43.5% for reviews vs. VADER's 39.4%), while VADER tends to assign more positive sentiment (53.4% for reviews and 75.8% for summaries compared to RoBERTa's 46.9% and 69.4%). Though RoBERTa likely offers superior contextual understanding and nuance detection, it required approximately 1000x longer processing time than VADER's efficient lexicon-based approach. For a definitive accuracy assessment, human-annotated ground truth labels would be necessary to evaluate which model better captures authentic sentiment, particularly in cases where contextual understanding significantly impacts interpretation.
+The comparison shows distinct patterns between both sentiment analysis models: RoBERTa displays more cautious sentiment assignment with higher neutral classifications (43.5% for reviews vs. VADER's 39.4%), while VADER tends to assign more positive sentiment (53.4% for reviews and 75.8% for summaries compared to RoBERTa's 46.9% and 69.4%). Though RoBERTa likely offers superior contextual understanding and nuance detection, it required approximately 1000x longer processing time than VADER's efficient lexicon-based approach. For a definitive accuracy assessment, human-annotated ground truth labels would be necessary to evaluate which model better captures authentic sentiment, particularly in cases where contextual understanding significantly impacts interpretation.
+
+The top 10 recommended products based on our algorithm:
+
+| Product Name | Price (USD) |
+|-------------|----------|
+| IFB Neptune VX Free Standing 12 Place Settings Dishwasher | $423.39 |
+| IFB Neptune SX1 Free Standing 15 Place Settings Dishwasher | $489.39 |
+| Voltas Beko DF14W Free Standing 14 Place Settings Dishwasher | $347.49 |
+| TP-Link TL-WA850RE(IN) 300 Mbps WiFi Range Extender | $16.16 |
+| Hold up Triangle Shape Mobile Holder For Table | $1.50 |
+| Airtel Regular Digital TV DTH Remote Compatible | $2.37 |
+| KENT 16079 - Wet Grinder (White) | $54.99 |
+| Google Chromecast 3 Media Streaming Device | $29.16 |
+| Google Nest Hub (2nd gen), Display with Google Assistant | $76.99 |
+| Butterfly Rapid Plus Wet Grinder with Coconut Scraper | $46.19 |
 
 ## Applications
 This sentiment-enhanced recommendation system can help e-commerce platforms improve customer satisfaction by recommending products that genuinely resonate with users, potentially increasing conversion rates and reducing return frequencies.
