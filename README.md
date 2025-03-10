@@ -11,21 +11,23 @@ The analysis utilizes a comprehensive [Flipkart e-commerce dataset](https://www.
 ## Methodology
 
 The project implements a modular architecture with dedicated classes for (reference: flipkart_customer_product_review.ipynb):
-- Data loading, validation and preprocessing
-- Sentiment extraction using RoBERTa transformer models
-- Lexicon-based sentiment analysis with VADER
-- Comparative performance evaluation between approaches
-- Visualization of relationships between price points, customer ratings, and sentiment scores
-- Product ranking based on sentiment polarity metrics
+
+    - Data loading, validation and preprocessing
+    - Sentiment extraction using RoBERTa transformer models
+    - Lexicon-based sentiment analysis with VADER
+    - Comparative performance evaluation between approaches
+    - Visualization of relationships between price points, customer ratings, and sentiment scores
+    - Product ranking based on sentiment polarity metrics
 
 The system extracts sentiment from both brief reviews and concise summaries (typically one or two sentences long), offering multi-dimensional analysis of customer opinions.
 
 ## Discussion
+We explored the following relations:
 
-- Correlation patterns between product price and sentiment polarity
-- Comparative performance analysis of transformer-based (RoBERTa) vs. lexicon-based (VADER) sentiment extraction
-- Identification of sentiment-price-rating relationships that can inform pricing strategies
-- Optimized recommendation algorithms that prioritize products with consistently positive sentiment patterns
+    - Correlation patterns between product price and sentiment polarity
+    - Comparative performance analysis of transformer-based (RoBERTa) vs. lexicon-based (VADER) sentiment extraction
+    - Identification of sentiment-price-rating relationships that can inform pricing strategies
+    - Optimized recommendation algorithms that prioritize products with consistently positive sentiment patterns
 
   <div style="display: flex; flex-direction: column; gap: 30px; margin-bottom: 30px;">
   <div>
